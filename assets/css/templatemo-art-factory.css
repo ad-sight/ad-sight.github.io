@@ -847,7 +847,7 @@ about
 */
 
 #about {
-  padding: 120px 0px;
+  padding: 50px 0px;
   background-image: linear-gradient(hsla(184, 73%, 98%, 0.726), #ecfbfc);
 }
 
@@ -860,7 +860,7 @@ about
 }
 
 #about2 {
-  padding: 120px 0px;
+  padding: 50px 0px;
   background-image: linear-gradient(#ecfbfc, #fff);
 
 }
