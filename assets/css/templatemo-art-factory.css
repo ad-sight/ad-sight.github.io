@@ -145,7 +145,7 @@ hgroup {
 
 html,
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -176,6 +176,7 @@ p {
   font-size: 15px;
   line-height: 25px;
   color: #4a4a4a;
+  letter-spacing: -0.5px!important;
 }
 
 /*
@@ -186,7 +187,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: "Lato", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 ::selection {
@@ -215,13 +216,36 @@ body {
     margin-bottom: 60px;
   }
 }
+@media (max-width: 576px) {
+  .container {
+    max-width: 725px;
+  }
+}
+
+
+a.nav-button {
+  font-size: 12px;
+  border-radius: 0px;
+  padding: 10px 15px;
+  background-color: #75daad;
+  border: 3px solid #1eb2a6!important;
+  text-transform: none;
+  letter-spacing: 0.25px!important;
+  height: auto!important;
+  line-height: 1em!important;
+  color: #fff!important;
+  font-weight: 500!important;
+}
+a.nav-button:hover, a.nav-button:active, a.nav-button:focus {
+  color: #fff!important;
+  border: 3px solid #1ac091!important;
+  background-color: #3fdb90;
+}
 
 a.main-button-slider {
   font-size: 13px;
-  border-radius: 20px;
+  border-radius: 0px;
   padding: 12px 20px;
-  background-color: #f55858;
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -230,17 +254,12 @@ a.main-button-slider {
   transition: all 0.3s ease 0s;
 }
 
-a.main-button-slider:hover {
-  background-color: #f55858;
-}
-
 a.main-button {
   font-size: 12px;
-  border-radius: 12px;
+  border-radius: 0px;
   padding: 10px 15px;
-  background-color: #002BDF;
+  background-color: #2549E7;
   border: 2px solid #001C8F;
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -250,7 +269,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #0627b1;
+  background-color: #002BDF;
 }
 
 button.main-button {
@@ -258,12 +277,11 @@ button.main-button {
   border: none;
   cursor: pointer;
   font-size: 13px;
-  border-radius: 12px;
+  border-radius: 0px;
   padding: 10px 20px;
   background-color: #002BDF;
   border: 2px solid #001C8F;
   width: 100%;
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -279,7 +297,7 @@ button.main-button:hover {
 .section-heading h2 {
   text-align: center;
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 400;
   color: #232323;
   margin-bottom: 20px;
 }
@@ -295,6 +313,11 @@ button.main-button:hover {
 header
 ---------------------------------------------
 */
+.gradient-bar {
+  width: 100%;
+  height: 6px;
+  background-image: linear-gradient(to right, #002BDF, #EA4C89);
+}
 
 .background-header {
   background-color: #fff;
@@ -308,19 +331,7 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e !important;
-}
-
-.background-header .main-nav .nav > li:hover > a {
-  color: #f55858 !important;
-}
-
-.background-header .main-nav .nav > li > ul > li:hover > a {
-  color: #f55858 !important;
-}
-
-.background-header .nav li a.active {
-  color: #f55858 !important;
+  color: #fff !important;
 }
 
 .header-area {
@@ -342,11 +353,10 @@ header
 }
 
 .header-area .main-nav .logo {
-  line-height: 80px;
+  line-height: 75px;
   color: #000;
   font-size: 28px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 2px;
   float: left;
   -webkit-transition: all 0.3s ease 0s;
@@ -381,8 +391,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 13px;
-  color: #000;
-  text-transform: uppercase;
+  color: #fff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -391,10 +400,6 @@ header
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
-}
-
-.header-area .main-nav .nav li:hover a {
-  color: #f55858;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -413,7 +418,7 @@ header
 }
 
 .header-area.background-header .main-nav .nav li.submenu:after {
-  color: #000;
+  color: #fff;
 }
 
 .header-area .main-nav .nav li.submenu ul {
@@ -464,12 +469,10 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background: #f55858;
 }
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #f55858;
   padding-left: 25px;
 }
 
@@ -496,6 +499,7 @@ header
   z-index: 99;
   right: 40px;
   display: none;
+  color: #000;
 }
 
 .header-area .main-nav .menu-trigger span,
@@ -505,7 +509,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: #000;
   display: block;
   position: absolute;
   width: 30px;
@@ -516,7 +520,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #000;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -525,7 +529,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: #000;
   display: block;
   position: absolute;
   width: 30px;
@@ -536,7 +540,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #000;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -577,11 +581,11 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #fff;
+  background-color: #000;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
+  background-color: #000;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -589,11 +593,11 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #fff;
+  background-color: #000;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #1e1e1e;
+  background-color: #000;
 }
 
 .header-area.header-sticky {
@@ -602,10 +606,6 @@ header
 
 .header-area.header-sticky .nav {
   margin-top: 20px !important;
-}
-
-.header-area.header-sticky .nav li a.active {
-  color: #f55858;
 }
 
 @media (max-width: 1200px) {
@@ -620,7 +620,6 @@ header
 
 @media (max-width: 991px) {
   .header-area {
-    padding: 0px 15px;
     height: 80px;
     box-shadow: none;
     text-align: center;
@@ -669,10 +668,7 @@ header
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
   }
-  .header-area .main-nav .nav > li > a:hover,
-  .header-area .main-nav .nav .submenu > ul > li > a:hover {
-    color: #f55858;
-  }
+
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
     visibility: inherit;
@@ -687,7 +683,7 @@ header
   }
   .header-area .main-nav .nav li.submenu ul li a {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
   }
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
     width: 0px;
@@ -724,7 +720,7 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.png);
+  background-image: linear-gradient(#ffffff,hsla(184, 73%, 98%, 0.726));
   background-repeat: no-repeat;
 /*
 TRY IT ... with or without CENTER CENTER
@@ -732,13 +728,12 @@ TRY IT ... with or without CENTER CENTER
 */
   background-size: cover;
   width: 100%;
-  height: 105vh;
-  margin-top: -10vh;
+  height: 60vh;
 }
 
 .welcome-area .header-text {
   position: absolute;
-  top: 55%;
+  top: 60%;
   transform: translateY(-60%);
   text-align: left;
   width: 100%;
@@ -749,16 +744,19 @@ TRY IT ... with or without CENTER CENTER
 }
 
 .welcome-area .header-text h1 {
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 60px;
-  letter-spacing: 1.4px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: -1px;
   margin-bottom: 30px;
   color: #000;
 }
-
+.welcome-area .header-text h1 span {
+  color: #EA4C89;
+  font-weight: 700;
+}
 .welcome-area .header-text p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 17px;
   color: #000;
   line-height: 30px;
@@ -769,7 +767,7 @@ TRY IT ... with or without CENTER CENTER
 
 @media (max-width: 991px) {
   .welcome-area .header-text {
-    top: 55% !important;
+    top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
   }
   .welcome-area .header-text h1 {
@@ -789,7 +787,7 @@ TRY IT ... with or without CENTER CENTER
 
 @media (max-width: 820px) {
   .welcome-area .header-text {
-    top: 55% !important;
+    top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
   }
   .welcome-area .header-text h1 {
@@ -803,11 +801,17 @@ TRY IT ... with or without CENTER CENTER
 }
 
 @media (max-width: 765px) {
+  .mobile-hidden {
+    display: none;
+  }
+  #welcome {
+    height: 40vh;
+  }
   .welcome-area {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .welcome-area .header-text {
-    top: 55% !important;
+    top: 65% !important;
     transform: perspective(1px) translateY(-50%) !important;
     text-align: center;
   }
@@ -844,13 +848,7 @@ about
 
 #about {
   padding: 120px 0px;
-  border-bottom: 1px solid #eee;
-}
-
-@media (max-width: 765px) {
-  #about {
-    padding: 20px 0px 120px 0px;
-  }
+  background-image: linear-gradient(hsla(184, 73%, 98%, 0.726), #ecfbfc);
 }
 
 #about .right-text {
@@ -863,6 +861,8 @@ about
 
 #about2 {
   padding: 120px 0px;
+  background-image: linear-gradient(#ecfbfc, #fff);
+
 }
 
 #about2 .right-image {
@@ -873,6 +873,7 @@ about
 #about2 h5 {
   font-size: 26px;
   font-weight: 700;
+  letter-spacing: -1px;
   color: #1e1e1e;
   line-height: 40px;
   margin-bottom: 25px;
@@ -903,7 +904,14 @@ about
   color: #1e1e1e;
   margin-bottom: 20px;
 }
-
+span {
+  color: #EA4C89;
+}
+@media (max-width: 765px) {
+  #about, #about2 {
+    padding: 20px 25px 50px 25px;
+  }
+}
 /*
 ---------------------------------------------
 services
@@ -1112,7 +1120,9 @@ accordions
 #frequently-question .left-text h5 {
   font-size: 26px;
   font-weight: 700;
+  letter-spacing: -1px;
   color: #1e1e1e;
+  letter-spacing: -1px;
   line-height: 40px;
   margin-bottom: 25px;
   letter-spacing: 0.5px;
@@ -1163,7 +1173,7 @@ accordions
   transition: transform 200ms ease-in-out;
 }
 .accordion-head.is-open {
-  color: #000;
+  color: #fff;
   border-bottom: none;
 }
 .accordion-head.is-open .icon {
@@ -1199,6 +1209,7 @@ contact
 
 #contact-us h5 {
   font-weight: 500;
+  letter-spacing: -1px;
   font-size: 18px;
   color: #1e1e1e;
   letter-spacing: 0.25px;
@@ -1221,8 +1232,8 @@ contact
 }
 
 .contact-form {
-  padding: 100px;
-  background-color: #5372ff;
+  padding: 50px;
+  background-color: #fff;
 }
 
 @media (max-width: 765px) {
@@ -1234,7 +1245,7 @@ contact
 
 .contact-form input,
 .contact-form textarea {
-  color: #fff;
+  color: #000;
   font-size: 14px;
   border: none;
   width: 100%;
@@ -1242,7 +1253,7 @@ contact
   outline: none;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 2px solid #ccd6ff;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1262,25 +1273,24 @@ contact
 
 .contact-form ::-webkit-input-placeholder {
   /* Edge */
-  color: #fff;
+  color: #000;
 }
 
 .contact-form :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #fff;
+  color: #000;
 }
 
 .contact-form ::placeholder {
-  color: #fff;
+  color: #000;
 }
-
 /*
 ---------------------------------------------
 footer
 ---------------------------------------------
 */
 footer {
-  background-color: #fff;
+  background-image: linear-gradient(#fff,hsla(180, 45%, 81%, 0.884));
   padding: 60px 0px;
 }
 
