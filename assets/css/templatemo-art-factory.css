@@ -225,10 +225,9 @@ body {
 
 a.nav-button {
   font-size: 12px;
-  border-radius: 0px;
-  padding: 10px 15px;
+  border-radius: 4px;
+  padding: 12px 20px;
   background-color: #75daad;
-  border: 3px solid #1eb2a6!important;
   text-transform: none;
   letter-spacing: 0.25px!important;
   height: auto!important;
@@ -238,13 +237,12 @@ a.nav-button {
 }
 a.nav-button:hover, a.nav-button:active, a.nav-button:focus {
   color: #fff!important;
-  border: 3px solid #1ac091!important;
   background-color: #3fdb90;
 }
 
 a.main-button-slider {
   font-size: 13px;
-  border-radius: 0px;
+  border-radius: 4px;
   padding: 12px 20px;
   color: #fff;
   letter-spacing: 0.25px;
@@ -256,10 +254,9 @@ a.main-button-slider {
 
 a.main-button {
   font-size: 12px;
-  border-radius: 0px;
-  padding: 10px 15px;
+  border-radius: 4px;
+  padding: 12px 20px;
   background-color: #2549E7;
-  border: 2px solid #001C8F;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -277,10 +274,9 @@ button.main-button {
   border: none;
   cursor: pointer;
   font-size: 13px;
-  border-radius: 0px;
-  padding: 10px 20px;
+  border-radius: 4px;
+  padding: 12px 20px;
   background-color: #002BDF;
-  border: 2px solid #001C8F;
   width: 100%;
   color: #fff;
   letter-spacing: 0.25px;
