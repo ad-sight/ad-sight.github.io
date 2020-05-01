@@ -259,6 +259,7 @@ a.main-button {
   background-color: #2549E7;
   color: #fff;
   letter-spacing: 0.25px;
+  font-weight: 500!important;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1229,7 +1230,6 @@ contact
 
 .contact-form {
   padding: 50px;
-  background-color: #fff;
 }
 
 @media (max-width: 765px) {
@@ -1249,8 +1249,10 @@ contact
   outline: none;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 0px;
-  border: 2px solid #ccd6ff;
+  border-radius: 7px;
+  background-color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06); */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
