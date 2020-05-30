@@ -262,6 +262,7 @@ a.main-button-slider {
 }
 
 a.main-button {
+  margin: 0.9rem;
   font-size: 12px;
   border-radius: 4px;
   padding: 12px 20px;
@@ -301,6 +302,7 @@ button.main-button:hover {
 }
 
 a.secondary-button {
+  margin: 0.9rem;
   font-size: 12px;
   border-radius: 4px;
   padding: 12px 20px;
@@ -759,7 +761,6 @@ welcome
 ---------------------------------------------
 */
 #welcome {
-  overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
@@ -855,8 +856,9 @@ TRY IT ... with or without CENTER CENTER
     padding-bottom: 100px;
   }
   .welcome-area .header-text {
+    height: 20rem;
     top: 65% !important;
-    transform: perspective(1px) translateY(-50%) !important;
+    transform: perspective(1px) translateY(-30%) !important;
     text-align: center;
   }
   .welcome-area .header-text .buttons {
@@ -910,9 +912,8 @@ about
 }
 
 #about2 {
-  padding: 50px 0px;
+  padding-top: 0;
   background-image: linear-gradient(#ecfbfc, #fff);
-
 }
 
 #about2 .right-image {
@@ -958,8 +959,8 @@ span {
   color: #EA4C89;
 }
 @media (max-width: 765px) {
-  #about, #about2 {
-    padding: 20px 25px 50px 25px;
+  #about {
+    padding-top: 6.5rem;
   }
 }
 .feature-step {
