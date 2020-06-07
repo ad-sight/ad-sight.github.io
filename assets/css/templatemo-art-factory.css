@@ -1344,6 +1344,81 @@ contact
 .contact-form ::placeholder {
   color: #000;
 }
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+/*
+---------------------------------------------
+demo
+---------------------------------------------
+*/
+.demo-section {
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.demo-card {
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px;
+  text-align: center;
+}
+.demo-header {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.demo-img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  max-height: 500px;
+}
+
+.demo-button-container {
+  background-color: hsl(0, 0%, 97%);
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 0px;
+}
+.demo-button {
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 500;
+  background-color: #75daad;
+  padding: 10px 25px;
+  outline: 0;
+  text-decoration: none!important;
+  color: #fff;
+  border: none;
+}
+.demo-button:hover {
+  background-color: #3fdb90;
+  color: #fff!important;
+}
+.button-gray {
+  background-color: #fff!important;
+  color: #000!important;
+  border: 1px solid #e6e6e6;
+}
+.button-gray:hover {
+  background-color: #e6e6e6!important;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .demo-section {
+    padding: 50px 10px;
+  }
+  .button-gray {
+    width: 100%;
+  }
+  .demo-button {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
 /*
 ---------------------------------------------
 footer
