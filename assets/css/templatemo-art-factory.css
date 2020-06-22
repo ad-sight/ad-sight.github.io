@@ -224,7 +224,7 @@ body {
 
 a.nav-link {
   font-size: 12px;
-  padding: 12px 20px;
+  padding: 12px;
   text-transform: none;
   letter-spacing: 0.25px!important;
   height: auto!important;
@@ -235,7 +235,7 @@ a.nav-link {
 a.nav-button {
   font-size: 12px;
   border-radius: 4px;
-  padding: 12px 20px;
+  padding: 12px;
   background-color: #75daad;
   text-transform: none;
   letter-spacing: 0.25px!important;
@@ -247,6 +247,19 @@ a.nav-button {
 a.nav-button:hover, a.nav-button:active, a.nav-button:focus {
   color: #fff;
   background-color: #3fdb90;
+}
+button.nav-button {
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 12px 20px;
+  background-color: #75daad;
+  text-transform: none;
+  letter-spacing: 0.25px!important;
+  height: auto!important;
+  line-height: 1em!important;
+  color: #fff;
+  font-weight: 500!important;
+  border: 1px solid #75daad;
 }
 
 a.main-button-slider {
@@ -425,12 +438,12 @@ header
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .header-area .main-nav .nav li:last-child {
-  padding-right: 0px;
+  padding-left: 8px;
 }
 
 .header-area .main-nav .nav li a {
@@ -755,6 +768,57 @@ header
   }
 }
 
+input.nav-contact-form {
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 12px 20px;
+  text-transform: none;
+  letter-spacing: 0.25px!important;
+  height: auto!important;
+  line-height: 1em!important;
+  color: #fff;
+  font-weight: 500!important;
+  border: 1px solid #e6e6e6;
+  min-width: 240px;
+  color: #000;
+}
+@media (min-width: 992px) {
+  input.nav-contact-form {
+    max-width: 200px!important;
+  }
+}
+button.nav-contact-form {
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 12px 20px;
+  text-transform: none;
+  letter-spacing: 0.25px!important;
+  height: auto!important;
+  line-height: 1em!important;
+  color: #fff;
+  font-weight: 500!important;
+  border: 1px solid #e6e6e6;
+  min-width: 200px;
+}
+
+.card-header {
+  border-top: 4px solid #EA4C89;
+  background-color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.card-body {
+  background-color: #fff;
+  padding: 20px 15px;
+}
+
+.card-body ul {
+  padding: 20px 0px;
+}
+.card-body li {
+  padding: 5px 0px;
+}
 /*
 ---------------------------------------------
 welcome
@@ -885,6 +949,21 @@ TRY IT ... with or without CENTER CENTER
     margin-top: 20px;
   }
 }
+/*
+Good company
+*/
+#good-company {
+  padding: 50px 25px;
+  background-color: hsla(184, 73%, 98%, 0.726);
+}
+
+#good-company h3 span {
+  color: #EA4C89;
+}
+#good-company p  {
+  padding: 20px 0px;
+  font-size: 16px;
+}
 
 /*
 ---------------------------------------------
@@ -902,6 +981,10 @@ about
   background-image: linear-gradient(hsla(184, 73%, 98%, 0.726), #ecfbfc);
 
 }
+#about h6 {
+  padding-bottom: 30px;
+  color: #9c9c9c;
+}
 
 #about .right-text {
   align-self: center;
@@ -912,8 +995,14 @@ about
 }
 
 #about2 {
-  padding-top: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-image: linear-gradient(#ecfbfc, #fff);
+}
+
+#about3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #about2 .right-image {
@@ -921,18 +1010,20 @@ about
 }
 
 #about h5,
-#about2 h5 {
-  font-size: 26px;
+#about2 h5,
+#about3 h5 {
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: -1px;
   color: #1e1e1e;
-  line-height: 40px;
-  margin-bottom: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
 
 #about p,
-#about2 p {
+#about2 p,
+#about3 p {
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 30px;
@@ -958,6 +1049,7 @@ about
 span {
   color: #EA4C89;
 }
+
 @media (max-width: 765px) {
   #about {
     padding-top: 6.5rem;
@@ -1254,6 +1346,9 @@ accordions
 contact
 ---------------------------------------------
 */
+.w-100 {
+  min-width: 100%!important;
+}
 
 #contact-us .container-fluid {
   padding-right: 0px;
@@ -1445,7 +1540,8 @@ footer
 ---------------------------------------------
 */
 footer {
-  background-image: linear-gradient(#fff,hsla(180, 45%, 81%, 0.884));
+  background-color: hsla(184, 73%, 98%, 0.726);
+  border-top: 2px solid #e6e6e6;
   padding: 60px 0px;
 }
 
