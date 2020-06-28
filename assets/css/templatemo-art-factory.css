@@ -260,6 +260,7 @@ button.nav-button {
   color: #fff;
   font-weight: 500!important;
   border: 1px solid #75daad;
+  max-width: 175px;
 }
 
 a.main-button-slider {
@@ -394,12 +395,13 @@ header
 }
 
 .header-area {
-  position: absolute;
+  position: sticky;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 100;
   height: 100px;
+  margin-bottom: 50px;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -837,7 +839,7 @@ TRY IT ... with or without CENTER CENTER
 */
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 40vh;
 }
 
 .welcome-area .header-text {
@@ -910,11 +912,17 @@ TRY IT ... with or without CENTER CENTER
 }
 
 @media (max-width: 765px) {
+  button.nav-button {
+    margin-top: 2px;
+  }
+  #about {
+    margin-top: 30px;
+  }
   .mobile-hidden {
     display: none;
   }
   #welcome {
-    height: 40vh;
+    height: 20vh;
   }
   .welcome-area {
     padding-bottom: 100px;
